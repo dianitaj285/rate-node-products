@@ -1,0 +1,26 @@
+
+Create a NodeJs Application using stackblitz.com or your local environment,
+- Add express.js library: npm install express
+- Create following endpoints
+1. Get list of product order by title
+2. Get list of products categories
+3. Get top 10 products base on the price
+4. Get top product category withe the rate and count highest
+5. Get the cheapest and expensive product 
+
+Implementation Notes:
+1. Initial project setup, use following code:
+
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
+app.listen(port, () => {
+  console.log(`Server is listening at http://localhost:${port}`);
+});
+
+run on the terminal: "node index.js" to start the server
