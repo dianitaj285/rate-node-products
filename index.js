@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
   const productsByTitle = data
     .map((product) => product.title)
-    .sort((a, b) => a.name - b.name);
+    .sort((a, b) => a.title - b.title);
 
   res.status(200).send(productsByTitle);
 });
